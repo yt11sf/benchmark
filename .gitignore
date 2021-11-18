@@ -1,7 +1,16 @@
-.vscode
-__pycache__
-GS_timing.*
-Project Description.docx
-Debug
+# compiler/intepreter
 .vs
+.vscode
+
+# python
+__pycache__
+
+# cpp
+Debug
 *.vcxproj*
+*.obj
+*.ilk
+*.pdb
+
+# misc
+Project Description.docx

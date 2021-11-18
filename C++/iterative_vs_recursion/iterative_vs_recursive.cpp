@@ -11,7 +11,7 @@
 using namespace std;
 
 // Generate sorted n size array with uniform increment
-void generateSortIntArr(int* arr, const int size, const int min, const int max)
+void generateSortIntArr(int *arr, const int size, const int min, const int max)
 {
     for (int i = 0; i < size; i++)
         arr[i] = i;
@@ -21,7 +21,6 @@ double sec(void)
 {
     return double(clock()) / double(CLOCKS_PER_SEC);
 }
-
 
 // iterative lambda to return arr[i], where arr[i] = x
 // :param: int arr[], int size, int x
@@ -46,7 +45,7 @@ int bs_it(int arr[], const int size, const int x)
 int bs_re(int arr[], const int size, const int x)
 {
     // inner recursive lambda
-    auto bs_re_imp = [](int arr[], const int low, const int high, const int x, auto& bs_ref) mutable -> int
+    auto bs_re_imp = [](int arr[], const int low, const int high, const int x, auto &bs_ref) mutable -> int
     {
         int mid = (low + high) / 2;
         if (low > high)
