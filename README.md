@@ -1,1 +1,1 @@
-Some simple benchmarking for Python performance.
+Some simple benchmarking for performance comparison.

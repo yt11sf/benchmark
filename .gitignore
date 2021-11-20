@@ -1,6 +1,9 @@
 # compiler/intepreter
+
+.idea
 .vs
 .vscode
+.settings
 
 # python
 __pycache__
@@ -11,6 +14,13 @@ Debug
 *.obj
 *.ilk
 *.pdb
+
+# java
+bin
+*.classpath
+*.project
+*.iml
+*.xml
 
 # misc
 Project Description.docx
