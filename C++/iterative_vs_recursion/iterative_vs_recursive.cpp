@@ -89,11 +89,7 @@ int main()
     cout << "Individual recursive version run time = " << (((T2 - T1) / n) * 1.E9) / K << " nanosec\n\n";
 
     // infinite loop to prevent program from closing before checking benchmark
-    cout << "On infinite loop to prevent software closing before recording benchmark.\n";
-    while (1)
-    {
-        cout << "Sleeping" << endl;
-        Sleep(10000);
-    }
+    cout << "Press any key to end the program...";
+    cin.ignore();
     return 0;
 }

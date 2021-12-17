@@ -10,6 +10,7 @@ __pycache__
 
 # cpp
 Debug
+*.exe
 *.vcxproj*
 *.obj
 *.ilk
