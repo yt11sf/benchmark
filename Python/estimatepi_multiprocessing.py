@@ -168,7 +168,7 @@ def get_accuracy():
 
 
 # the main process
-if __name__ == "__main__":
+def main():
     opt = input(
         "Enter 1 for benchmarking time\nEnter 2 for benchmarking result\nOption\t: ")
     if opt == "1":
@@ -177,3 +177,7 @@ if __name__ == "__main__":
         get_accuracy()
     else:
         print("Selected option is not available")
+
+
+if __name__ == "__main__":
+    main()

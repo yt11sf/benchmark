@@ -42,7 +42,7 @@ def different_set(org_A, org_B):
     C = set(A) - set(B + [(y, x)for x, y in B])
 
 
-if __name__ == "__main__":
+def main():
     n = 100
     A = [(i, i*2) for i in range(1000)]
     B = [(i, i*3) for i in range(1000)]
@@ -53,3 +53,7 @@ if __name__ == "__main__":
             func(A, B)
         t2 = millis()
         print(f"{func.__name__}: {t2-t1:.2f}ms")
+
+
+if __name__ == "__main__":
+    main()

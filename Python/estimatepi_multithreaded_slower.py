@@ -21,6 +21,8 @@ pi = 0
 lock = threading.Lock()
 
 # Given n times to estimate the value of pi
+
+
 def estimate_pi(n):
     num_point_circle = 0
     num_point_square = 0
@@ -70,9 +72,15 @@ def estimate_pi_sync(no_of_thread, n):
     print(pi)
 
 # the main thread
-if __name__ == "__main__":
+
+
+def main():
     n = input("Enter n: ")
     nthread = input("Enter number of thread: ")
     start_time = time.time()
     estimate_pi_sync(int(nthread), int(n))
     print("--- %s seconds ---" % (time.time() - start_time))
+
+
+if __name__ == "__main__":
+    main()

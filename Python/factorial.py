@@ -131,7 +131,7 @@ def compare_order_thread(no_of_process, n, function_list):
 
 
 # the main thread
-if __name__ == "__main__":
+def main():
     nprocess = input("Enter number of process: ")
     n = input("Enter n < process * 888: ")
 
@@ -159,3 +159,7 @@ Index : Function
     compare_order_thread(int(nprocess), int(n), flist)
 
 # print(recorded_time)
+
+
+if __name__ == "__main__":
+    main()

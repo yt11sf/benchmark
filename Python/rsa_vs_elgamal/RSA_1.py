@@ -193,7 +193,7 @@ class RSA:
         print(out)
 
 
-if __name__ == "__main__":
+def main():
     print('*** USING RSA ***')
     rsa = RSA()
     opt = input('Multiple runs? (y/n)\t: ')
@@ -213,3 +213,7 @@ if __name__ == "__main__":
     elif opt == 'n':
         ciphertext, deciphertext = rsa.run()
         print(rsa)
+
+
+if __name__ == "__main__":
+    main()

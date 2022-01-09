@@ -172,7 +172,7 @@ class Elgamal:
         return s
 
 
-if __name__ == "__main__":
+def main():
     print('*** USING ELGAMAL ENCRYPTION PROTOCOL ***')
     elgamal = Elgamal()
     opt = input('Multiple runs? (y/n)\t: ')
@@ -192,3 +192,7 @@ if __name__ == "__main__":
     elif opt == 'n':
         ciphertext, deciphertext = elgamal.run()
         print(elgamal)
+
+
+if __name__ == "__main__":
+    main()
